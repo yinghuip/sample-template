@@ -1,7 +1,10 @@
 <form class="example-form">
+  <p>
+    <h3>1. Display validation errror when selected User's timezone is null </h3>
+  <p>
 <mat-form-field appearance="fill">
   <mat-label>User</mat-label>
-  <mat-select>
+  <mat-select required>
     <mat-option>
       -
     </mat-option>
@@ -11,15 +14,21 @@
   </mat-select>
 </mat-form-field>
 <p>
+  <p>
+    <h3>2. distinct list</h3>
+  <p>
   <mat-form-field appearance="fill">
   <mat-label>Depot</mat-label>
-  <mat-select>
+  <mat-select required>
     <mat-option *ngFor="let item of depot" [value]="item">
       {{item}}
     </mat-option>
   </mat-select>
 </mat-form-field>
 <p>
+    <p>
+    <h3>3.Disabled save button when form is invalid and display validation error under control</h3>
+  <p>
 <button mat-flat-button color="primary">save</button>
 </form>
 

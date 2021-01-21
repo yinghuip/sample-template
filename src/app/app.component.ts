@@ -5,9 +5,9 @@ import { Component, OnInit } from "@angular/core";
  * @title Display value autocomplete
  */
 @Component({
-  selector: "autocomplete-display-example",
-  templateUrl: "autocomplete-display-example.html",
-  styleUrls: ["autocomplete-display-example.css"]
+  selector: "app-component",
+  templateUrl: "app.component.html",
+  styleUrls: ["app.component.css"]
 })
 export class AutocompleteDisplayExample implements OnInit {
   constructor(private http: HttpClient) {
